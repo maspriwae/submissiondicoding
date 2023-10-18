@@ -11,4 +11,5 @@ pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
 Running App Streamlit
 ------------------------------------------
 
-streamlit run dashboard.py
+Lokal Akses : streamlit run dashboard.py
+Cloud Akses : https://submissiondicodingachmad.streamlit.app/
