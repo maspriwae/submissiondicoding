@@ -53,7 +53,7 @@ def create_rfm_df(df):
     return rfm_df
 
 # Load cleaned data
-all_df = pd.read_csv("main_data.csv")
+all_df = pd.read_csv("dashboard/main_data.csv")
 
 datetime_columns = ["order_purchase_timestamp", "order_estimated_delivery_date"]
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
@@ -141,7 +141,7 @@ def generate_top_bottom_products(data):
     top_10_products = byorder_df.head(10)
     bottom_10_products = byorder_df.tail(10)
     return top_10_products, bottom_10_products
-data = pd.read_csv("main_data.csv")
+data = pd.read_csv("dashboard/main_data.csv")
 top_10_products, bottom_10_products = generate_top_bottom_products(data)
 st.subheader("10 Produk Teratas berdasarkan Jumlah Pesanan")
 fig1, ax1 = plt.subplots(figsize=(8, 6))
